@@ -44,18 +44,18 @@ CI/CD Automation: Automated workflow triggering on every git push origin main to
 ## 🚀 Deployment Screenshots
 
 ### 1. Spring Boot Maven Build Success
-![Maven Build Success](docs/screenshots/05-maven-build-success.png)
+![Maven Build Success](https://raw.githubusercontent.com/Mcakohli/springboot-aws-docker-demo/main/docs/screenshots/05-maven-build-success.png)
 
 ### 2. AWS Cloud Infrastructure (RDS & S3)
 | AWS RDS PostgreSQL | Amazon S3 Storage Bucket |
 | :---: | :---: |
-| ![AWS RDS](docs/screenshots/02-rds-database.png) | ![Amazon S3](docs/screenshots/01-s3-bucket.png) |
+| ![AWS RDS](https://raw.githubusercontent.com/Mcakohli/springboot-aws-docker-demo/main/docs/screenshots/02-rds-database.png) | ![Amazon S3](https://raw.githubusercontent.com/Mcakohli/springboot-aws-docker-demo/main/docs/screenshots/01-s3-bucket.png) |
 
 ### 3. Docker Image Build & Push to Docker Hub
-![Docker Push](docs/screenshots/04-docker-hub-push.png)
+![Docker Push](https://raw.githubusercontent.com/Mcakohli/springboot-aws-docker-demo/main/docs/screenshots/04-docker-hub-push.png)
 
 ### 4. AWS EC2 Container Deployment & Live Application
-![EC2 Live Deployment](docs/screenshots/06-ec2-deployment-live.png)
+![EC2 Live Deployment](https://raw.githubusercontent.com/Mcakohli/springboot-aws-docker-demo/main/docs/screenshots/06-ec2-deployment-live.png)
 Prerequisites
 JDK 17+
 
