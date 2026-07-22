@@ -16,6 +16,8 @@ A production-ready Spring Boot microservice integrated with cloud-native AWS ser
                        [ AWS RDS ]           [ AWS S3 ]
                      (PostgreSQL DB)      (File/Media Storage)
                                                               ```
+
+                                                              
 Backend: Java 17, Spring Boot 3, Spring Data JPA, RESTful API
 
 Database: PostgreSQL on AWS RDS
@@ -39,9 +41,21 @@ Containerization: Clean Dockerfile packaging the app into a reproducible lightwe
 
 CI/CD Automation: Automated workflow triggering on every git push origin main to build the JAR, push to Docker Hub, and redeploy on AWS EC2.
 
-🚀 Deployment Screenshots
-1. Docker Container Running Live on AWS EC2
-⚙️ How to Run Locally
+## 🚀 Deployment Screenshots
+
+### 1. Spring Boot Maven Build Success
+![Maven Build Success](docs/screenshots/05-maven-build-success.png)
+
+### 2. AWS Cloud Infrastructure (RDS & S3)
+| AWS RDS PostgreSQL | Amazon S3 Storage Bucket |
+| :---: | :---: |
+| ![AWS RDS](docs/screenshots/02-rds-database.png) | ![Amazon S3](docs/screenshots/01-s3-bucket.png) |
+
+### 3. Docker Image Build & Push to Docker Hub
+![Docker Push](docs/screenshots/04-docker-hub-push.png)
+
+### 4. AWS EC2 Container Deployment & Live Application
+![EC2 Live Deployment](docs/screenshots/06-ec2-deployment-live.png)
 Prerequisites
 JDK 17+
 
