@@ -39,9 +39,22 @@ Containerization: Clean Dockerfile packaging the app into a reproducible lightwe
 
 CI/CD Automation: Automated workflow triggering on every git push origin main to build the JAR, push to Docker Hub, and redeploy on AWS EC2.
 
- Deployment Screenshots1. Spring Boot Maven Build Success2. AWS Cloud Infrastructure (RDS & S3)AWS RDS PostgreSQLAmazon S3 Storage Bucket
- 3. Docker Image Build & Push to Docker Hub
-4. AWS EC2 Container Deployment & Live Application
+## 🚀 Deployment Screenshots
+
+### 1. Spring Boot Maven Build Success
+![Maven Build Success](https://raw.githubusercontent.com/Mcakohli/springboot-aws-docker-demo/main/docs/screenshots/05-maven-build-success.png)
+
+### 2. AWS Cloud Infrastructure (RDS & S3)
+| AWS RDS PostgreSQL | Amazon S3 Storage Bucket |
+| :---: | :---: |
+| ![AWS RDS](https://raw.githubusercontent.com/Mcakohli/springboot-aws-docker-demo/main/docs/screenshots/02-rds-database.png) | ![Amazon S3](https://raw.githubusercontent.com/Mcakohli/springboot-aws-docker-demo/main/docs/screenshots/01-s3-bucket.png) |
+
+### 3. Docker Image Build & Push to Docker Hub
+![Docker Push](https://raw.githubusercontent.com/Mcakohli/springboot-aws-docker-demo/main/docs/screenshots/04-docker-hub-push.png)
+
+### 4. AWS EC2 Container Deployment & Live Application
+![EC2 Live Deployment](https://raw.githubusercontent.com/Mcakohli/springboot-aws-docker-demo/main/docs/screenshots/06-ec2-deployment-live.png)
+
 ⚙️ How to Run Locally
 Prerequisites
 JDK 17+
