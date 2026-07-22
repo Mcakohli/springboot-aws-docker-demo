@@ -14,10 +14,8 @@ A production-ready Spring Boot microservice integrated with cloud-native AWS ser
                                │                 │
                                ▼                 ▼
                        [ AWS RDS ]           [ AWS S3 ]
-                     (PostgreSQL DB)      (File/Media Storage)
-                                                              ```
+                     (PostgreSQL DB)      (File/Media Storage) ```
 
-                                                              
 Backend: Java 17, Spring Boot 3, Spring Data JPA, RESTful API
 
 Database: PostgreSQL on AWS RDS
@@ -41,21 +39,10 @@ Containerization: Clean Dockerfile packaging the app into a reproducible lightwe
 
 CI/CD Automation: Automated workflow triggering on every git push origin main to build the JAR, push to Docker Hub, and redeploy on AWS EC2.
 
-## 🚀 Deployment Screenshots
-
-### 1. Spring Boot Maven Build Success
-![Maven Build Success](https://raw.githubusercontent.com/Mcakohli/springboot-aws-docker-demo/main/docs/screenshots/05-maven-build-success.png)
-
-### 2. AWS Cloud Infrastructure (RDS & S3)
-| AWS RDS PostgreSQL | Amazon S3 Storage Bucket |
-| :---: | :---: |
-| ![AWS RDS](https://raw.githubusercontent.com/Mcakohli/springboot-aws-docker-demo/main/docs/screenshots/02-rds-database.png) | ![Amazon S3](https://raw.githubusercontent.com/Mcakohli/springboot-aws-docker-demo/main/docs/screenshots/01-s3-bucket.png) |
-
-### 3. Docker Image Build & Push to Docker Hub
-![Docker Push](https://raw.githubusercontent.com/Mcakohli/springboot-aws-docker-demo/main/docs/screenshots/04-docker-hub-push.png)
-
-### 4. AWS EC2 Container Deployment & Live Application
-![EC2 Live Deployment](https://raw.githubusercontent.com/Mcakohli/springboot-aws-docker-demo/main/docs/screenshots/06-ec2-deployment-live.png)
+ Deployment Screenshots1. Spring Boot Maven Build Success2. AWS Cloud Infrastructure (RDS & S3)AWS RDS PostgreSQLAmazon S3 Storage Bucket
+ 3. Docker Image Build & Push to Docker Hub
+4. AWS EC2 Container Deployment & Live Application
+⚙️ How to Run Locally
 Prerequisites
 JDK 17+
 
@@ -64,13 +51,11 @@ Maven
 Docker Desktop
 
 1. Clone the Repository
-Bash
-git clone [https://github.com/mcakohli/springboot-aws-docker-demo.git](https://github.com/mcakohli/springboot-aws-docker-demo.git)
+git clone [https://github.com/Mcakohli/springboot-aws-docker-demo.git](https://github.com/Mcakohli/springboot-aws-docker-demo.git)
 cd springboot-aws-docker-demo
-2. Configure Environment Variables
-Set up your database connection and AWS credentials in src/main/resources/application.yml or via environment variables:
 
-YAML
+Configure Environment Variables
+Set up your database connection and AWS credentials in src/main/resources/application.yml or via environment variables:
 spring:
   datasource:
     url: jdbc:postgresql://[your-rds-endpoint.amazonaws.com:5432/postgres](https://your-rds-endpoint.amazonaws.com:5432/postgres)
@@ -80,14 +65,13 @@ spring:
 aws:
   s3:
     bucket: your-s3-bucket-name
-3. Build & Run via Docker
-Bash
+
+    Build & Run via Docker
 # Build Docker image
 docker build -t springboot-aws-demo .
 
 # Run Container
 docker run -p 8080:8080 --name springboot-app springboot-aws-demo
-Access the API locally at: http://localhost:8080
 
-👨‍💻 Author
+Author
 Rahul Kohli — GitHub Profile
